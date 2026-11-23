@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "vstrike",
+  "version": "${version}",
+  "name": "VStrike",
+  "description": "a mod thats make hits register better - by 7ar8_",
+  "authors": ["7ar8_"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.vstrike.VStrikeClient"]
+  },
+  "mixins": [
+    {
+      "config": "vstrike.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
